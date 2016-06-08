@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- 开关柜子设备展示区域 -->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <!-- 子设备面板 -->
+
+        <LinearLayout
+            android:id="@+id/kgg_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 查询面板 -->
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <!-- 开关柜名称 -->
+
+        <TextView
+            android:id="@+id/cabinet_name_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dms_cabinet_name_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kgg_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cabinet_name_label_id"
+            android:layout_marginLeft="15dp" >
+        </Spinner>
+
+        <!-- 设备类型 -->
+
+        <TextView
+            android:id="@+id/device_type_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kgg_spinner_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/dms_device_type_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/deviceType_ctwd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/kgg_spinner_id"
+            android:layout_below="@id/device_type_label_id"
+            android:text="@string/dms_ctwd_value"
+            android:textColor="#FFF" />
+
+        <CheckBox
+            android:id="@+id/deviceType_gnwd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/kgg_spinner_id"
+            android:layout_below="@id/deviceType_ctwd_id"
+            android:text="@string/dms_gnwd_value"
+            android:textColor="#FFF" />
+
+        <CheckBox
+            android:id="@+id/deviceType_gnsd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/kgg_spinner_id"
+            android:layout_below="@id/deviceType_gnwd_id"
+            android:text="@string/dms_gnsd_value"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/kgg_query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/kgg_spinner_id"
+            android:layout_below="@id/deviceType_gnsd_id"
+            android:layout_marginTop="10dp"
+            android:background="@color/query_btn_bg"
+            android:text="@string/query_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

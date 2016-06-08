@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login_username">用户名：</string>
+    <string name="login_password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="pdf_label">配电房：</string>
+    <string name="roadPlan_label">规划方式：</string>
+    <string name="video_label">摄像头：</string>
+    <string name="video_bc_label">步长：</string>
+    <string name="video_bb_label">变倍</string>
+    <string name="video_jj_label">聚焦</string>
+    <string name="video_gq_label">光圈</string>
+    <string name="video_up_label">+</string>
+    <string name="video_down_label">-</string>
+    
+    <string name="please_choice_label">请选择</string>
+    <string name="query_label">查询</string>
+    <string name="login_btn">登录</string>
+    <string name="msg_label">消息</string>
+    <string name="app_name">智能配电房</string>
+    <string name="app_map_name">路线导航</string>
+    <string name="main_logo_name">智能配电房综合管理系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="operate_home">主页</string>
+    <string name="operate_1">视频监测</string>
+    <string name="operate_2">安防监测</string>
+    <string name="operate_3">电气监测</string>
+    <string name="operate_4">环境监测</string>
+    <string name="operate_5">设备状态监测</string>
+    <string name="operate_6">告警信息</string>
+    <string name="operate_7">预警信息</string>
+    <string name="operate_9">路线导航</string>
+    <string name="operate_8">注销</string>
+    <string name="roadplan_jc">驾车</string>
+    <string name="roadplan_gj">公交</string>
+    <string name="roadplan_bx">步行</string>
+    <string name="login_head_description">this is head description</string>
+    <string name="sz_logo_description">this is szlogo description</string>
+    <string name="menu_logo_description">this is menulogo description</string>
+    <string name="common_image_description">这里是通用图片描述</string>
+    <string name="map_satellite_label">卫星</string>
+    <string name="map_norm_label">地图</string>
+    <string name="map_traffic_label">路况</string>
+    <string name="map_virtual_navi_label">模拟导航</string>
+    <string name="map_real_navi_label">真实导航</string>
+   
+
+    <!-- 设备状态监测 -->
+    <string name="device_status_monitor_a_label">A相</string>
+    <string name="device_status_monitor_b_label">B相</string>
+    <string name="device_status_monitor_c_label">C相</string>
+    <string name="device_status_monitor_wdbias_label">温度偏差</string>
+    <string name="device_status_monitor_ext_label">排风扇状态</string>
+    <string name="device_status_monitor_dljf_label">电缆局放状态</string>
+    <string name="dms_transformer_name_label">变压器名称：</string>
+    <string name="dms_device_type_label">设备类型：</string>
+    <string name="dms_device_name_label">设备名称：</string>
+    <string name="dms_zz_type_label">装置类型：</string>
+    <string name="dms_query_time_label">查询时间：</string>
+    <string name="dms_mp_label">母排：</string>
+    <string name="dms_rz_label">绕组：</string>
+    <string name="dms_tx_label">铁心：</string>
+    <string name="dms_mp_value">母排</string>
+    <string name="dms_rz_value">绕组</string>
+    <string name="dms_tx_value">铁心</string>
+    
+    <string name="pre_page_label">上一页</string>
+    <string name="next_page_label">下一页</string>
+    <string name="sure_page_label">确认</string>
+    
+    <string name="dms_cable_name_label">电缆名称：</string>
+    
+    <string name="dms_cabinet_name_label">开关柜名称：</string>
+    <string name="dms_ctwd_value">触头温度</string>
+    <string name="dms_gnwd_value">柜内温度</string>
+    <string name="dms_gnsd_value">柜内湿度</string>
+    <string name="device_status_monitor_kggjf_label">开关柜局放状态</string>
+    
+    <string name="dms_type_item1">变压器</string>
+    <string name="dms_type_item2">电缆</string>
+    <string name="dms_type_item3">开关柜</string>
+    <string name="dms_type_item4">设备温度曲线</string>
+    
+    <string name="warn_no_label">序号</string>
+    <string name="warn_inarea_label">所在区域</string>
+    <string name="warn_time_label">告警时间</string>
+    <string name="warn_type_label">告警类型</string>
+    <string name="warn_content_label">告警内容</string>
+    
+    <string name="alert_no_label">序号</string>
+    <string name="alert_inarea_label">所在区域</string>
+    <string name="alert_time_label">预警时间</string>
+    <string name="alert_type_label">预警类型</string>
+    <string name="alert_content_label">预警内容</string>
+    <string name="choice_house_label">请选择配电房</string>
+    
+    
+</resources>

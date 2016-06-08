@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mymenu="http://schemas.android.com/apk/res/com.comtop.pdf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.comtop.pdf.component.MyHorizontalScrollView
+        android:id="@+id/my_hscroll_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_bg"
+        mymenu:rightPadding="250dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <!-- 菜单列表 -->
+            <include layout="@layout/menu" >
+            </include>
+
+            <!-- 内容面板 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:orientation="vertical" >
+
+                <!-- 自定义导航题头 -->
+                <include layout="@layout/page_head" >
+                </include>
+
+                <!-- 业务面板 -->
+                <LinearLayout
+                    android:id="@+id/container_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.comtop.pdf.component.MyHorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <!-- 这里引入配电房选择控件 -->
+
+    <include
+        android:id="@+id/warn_choice_pdf_panel_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="168dp"
+        layout="@layout/choice_pdf_panel" />
+
+    <!-- 列表 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/warn_no_label"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/warn_inarea_label"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/warn_time_label"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:text="@string/warn_type_label"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:text="@string/warn_content_label"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_line_bg"
+                android:contentDescription="@string/common_image_description" />
+
+            <ListView
+                android:id="@+id/main_warn_listview_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/gray_line_bg" >
+            </ListView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/main_warn_inarea_label_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在区域："
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/main_warn_inarea_spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_warn_inarea_label_id"
+                android:layout_marginLeft="15dp" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/main_warn_type_label_id"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_warn_inarea_spinner_id"
+                android:text="告警类型："
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/main_warn_type_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_warn_inarea_spinner_id"
+                android:layout_below="@id/main_warn_type_label_id" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/main_warn_time_start_label_id"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_warn_type_id"
+                android:text="告警时间："
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/main_warn_start_time_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_warn_inarea_spinner_id"
+                android:layout_below="@id/main_warn_time_start_label_id"
+                android:drawableBottom="@drawable/bottom_line_0099cc"
+                android:focusable="false"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/main_warn_end_time_label_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_warn_start_time_id"
+                android:text="至"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/main_warn_end_time_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_warn_inarea_spinner_id"
+                android:layout_below="@id/main_warn_end_time_label_id"
+                android:drawableBottom="@drawable/bottom_line_0099cc"
+                android:focusable="false"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/main_warn_query_id"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_warn_inarea_spinner_id"
+                android:layout_below="@id/main_warn_end_time_id"
+                android:background="@color/query_btn_bg"
+                android:text="@string/query_label"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

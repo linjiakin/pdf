@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/menu_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 头像 和姓名 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/menu_userhead_id"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:background="@drawable/login_default_head"
+                android:contentDescription="@string/common_image_description" />
+
+            <TextView
+                android:id="@+id/menu_username_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textColor="#FFF"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/menu_listView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

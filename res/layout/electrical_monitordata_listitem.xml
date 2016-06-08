@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/electrical_no_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:text="序号"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_monitor_datetime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="监测时间"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_monitor_project"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="监测项目"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_inarea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="所在区域"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_monitor_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="监测点"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="数值"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_monitor_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="监测状态"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/electrical_threshold_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="阈值"
+        android:textColor="#FFF" />
+
+</LinearLayout>

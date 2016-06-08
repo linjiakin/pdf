@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//assets/html/DeviceStateTemperature.html=utf-8
+encoding//assets/html/ElectricalLoadChart.html=utf-8
+encoding//assets/html/EnvironmentalDataChart.html=utf-8
+encoding//assets/html/SecurityAreaTemperature.html=utf-8
+encoding//src/com/comtop/pdf/activity/LoginActivity.java=utf-8
+encoding//src/com/comtop/pdf/activity/MainActivity.java=utf-8
+encoding//src/com/comtop/pdf/activity/OperateMainActivity.java=utf-8
+encoding//src/com/comtop/pdf/activity/SbztByqActivity.java=utf-8
+encoding//src/com/comtop/pdf/component/MyHorizontalScrollView.java=utf-8
+encoding//src/com/comtop/pdf/utils/SharedPreferencesUtils.java=utf-8
+encoding//src/org/videolan/libvlc/WeakHandler.java=utf-8
+encoding/<project>=UTF-8

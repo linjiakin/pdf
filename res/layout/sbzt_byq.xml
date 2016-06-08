@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/byq_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/byq_img_id"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/byq" />
+
+                <TextView
+                    android:id="@+id/byq_name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/byq_img_id"
+                    android:layout_centerHorizontal="true"
+                    android:text="变压器1/母排"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/line_bg_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/byq_name_id"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_line_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_bg_id"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/white_vline_bg" />
+
+                        <!-- 变压器设备A相状态图片 -->
+                        <ImageView
+                            android:id="@+id/byq_a_status_img_id"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/green" />
+						
+                        <!-- 变压器设备A相温度值 -->
+                        <TextView
+                            android:id="@+id/byq_a_temperature_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:text="21℃"
+                            android:textColor="#ffcc4035" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/device_status_monitor_a_label"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/white_vline_bg" />
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:text="21℃"
+                            android:textColor="#ffcc4035" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/device_status_monitor_b_label"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/white_vline_bg" />
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:text="38℃"
+                            android:textColor="#ffcc4035" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/device_status_monitor_c_label"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/white_vline_bg" />
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:text="10%"
+                            android:textColor="#ffcc4035" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/device_status_monitor_wdbias_label"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/white_vline_bg" />
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:text="开"
+                            android:textColor="#ffcc4035" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/device_status_monitor_ext_label"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变压器名称："
+            android:textColor="#FFF" />
+
+        <Spinner
+            android:id="@+id/byq_spinner_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备类型："
+            android:textColor="#FFF" />
+
+        <CheckBox
+            android:id="@+id/deviceType_mp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="母排"
+            android:textColor="#FFF" />
+
+        <CheckBox
+            android:id="@+id/deviceType_rz_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绕组"
+            android:textColor="#FFF" />
+
+        <CheckBox
+            android:id="@+id/deviceType_tx_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="铁心"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/byq_query_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

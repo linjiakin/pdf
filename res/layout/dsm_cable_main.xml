@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- 线缆子设备展示区域 -->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <!-- 子设备面板 -->
+
+        <LinearLayout
+            android:id="@+id/dl_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 查询面板 -->
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <!-- 电缆名称 -->
+
+        <TextView
+            android:id="@+id/cable_name_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dms_cable_name_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/dl_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cable_name_label_id"
+            android:layout_marginLeft="15dp" >
+        </Spinner>
+
+        <Button
+            android:id="@+id/dl_query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dl_spinner_id"
+            android:layout_below="@id/dl_spinner_id"
+            android:layout_marginTop="10dp"
+            android:background="@color/query_btn_bg"
+            android:text="@string/query_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

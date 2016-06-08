@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 变压器子类设备 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/byq_img_id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/common_image_description"
+            android:src="@drawable/byq" />
+
+        <TextView
+            android:id="@+id/byq_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/byq_img_id"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/line_bg_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/byq_name_id"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/common_image_description"
+            android:background="@drawable/white_line_bg" />
+
+        <LinearLayout
+            android:id="@+id/dms_transformer_item_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_bg_id"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:gravity="center" >
+            <!-- A相 -->
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+         	   android:gravity="center"
+			    android:orientation="vertical" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/white_vline_bg" />
+			
+			    <ImageView
+			        android:id="@+id/byq_a_status_img_id"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:layout_marginTop="5dp"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/green" />
+			
+			    <TextView
+			        android:id="@+id/byq_a_temperature_id"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="-40dp"
+			        android:textColor="#FFF" />
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="30dp"
+			        android:text="@string/device_status_monitor_a_label"
+			        android:textColor="#FFF" />
+			</LinearLayout>
+			
+            <!-- B相 -->
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+         	   android:gravity="center"
+			    android:orientation="vertical" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/white_vline_bg" />
+			
+			    <ImageView
+			        android:id="@+id/byq_b_status_img_id"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:layout_marginTop="5dp"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/green" />
+			
+			    <TextView
+			        android:id="@+id/byq_b_temperature_id"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="-40dp"
+			        android:textColor="#FFF" />
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="30dp"
+			        android:text="@string/device_status_monitor_b_label"
+			        android:textColor="#FFF" />
+			</LinearLayout>
+			
+            <!-- C相 -->
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+         	   android:gravity="center"
+			    android:orientation="vertical" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/white_vline_bg" />
+			
+			    <ImageView
+			        android:id="@+id/byq_c_status_img_id"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:layout_marginTop="5dp"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/green" />
+			
+			    <TextView
+			        android:id="@+id/byq_c_temperature_id"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="-40dp"
+			        android:textColor="#FFF" />
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="30dp"
+			        android:text="@string/device_status_monitor_c_label"
+			        android:textColor="#FFF" />
+			</LinearLayout>
+			
+			
+            <!-- 温度偏差 -->
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+         	   android:gravity="center"
+			    android:orientation="vertical" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/white_vline_bg" />
+			
+			    <ImageView
+			        android:id="@+id/byq_wdpc_status_img_id"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:layout_marginTop="5dp"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/green" />
+			
+			    <TextView
+			        android:id="@+id/byq_wdpc_temperature_id"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="-40dp"
+			        android:textColor="#FFF" />
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="30dp"
+			        android:text="@string/device_status_monitor_wdbias_label"
+			        android:textColor="#FFF" />
+			</LinearLayout>
+			
+            <!-- 排风扇状态 -->
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+         	   android:gravity="center"
+			    android:orientation="vertical" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/white_vline_bg" />
+			
+			    <ImageView
+			        android:id="@+id/byq_pfs_status_img_id"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:layout_marginTop="5dp"
+          			android:contentDescription="@string/common_image_description"
+			        android:src="@drawable/green" />
+			
+			    <TextView
+			        android:id="@+id/byq_pfs_temperature_id"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="-40dp"
+			        android:textColor="#FFF" />
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="30dp"
+			        android:text="@string/device_status_monitor_ext_label"
+			        android:textColor="#FFF" />
+			</LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

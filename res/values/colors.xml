@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="query_btn_bg">#3385FF</color>
+    <color name="main_video_monitor_bg">#999933</color>
+    <color name="main_security_monitor_bg">#339966</color>
+    <color name="main_electrical_monitor_bg">#AA66CC</color>
+    <color name="main_environmental_monitor_bg">#21A435</color>
+    <color name="main_devicestatus_monitor_bg">#33B5E5</color>
+    <color name="main_warn_bg">#FF4444</color>
+    <color name="main_alarm_bg">#CC9933</color>
+    <color name="main_exit_bg">#99CC00</color>
+</resources>

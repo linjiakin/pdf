@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="请选择"
+        android:textSize="36sp"
+        android:textColor="#FF00"
+        />
+    <ListView
+        android:id="@+id/popup_data_id" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一步"/>
+    </LinearLayout>
+
+</LinearLayout>

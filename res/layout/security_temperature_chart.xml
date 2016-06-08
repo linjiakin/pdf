@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- 安防监测温度趋势图 -->
+
+    <WebView
+        android:id="@+id/security_temperature_chart_webview_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="1"
+        android:background="#000000"
+        android:layerType="none"
+        android:scrollbars="none" />
+
+    <!-- 查询面板 -->
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/security_temperature_chart_querytime_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dms_query_time_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/security_temperature_chart_querytime_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_temperature_chart_querytime_label_id"
+            android:layout_marginLeft="15dp"
+            android:drawableBottom="@drawable/bottom_line_0099cc"
+            android:editable="false"
+            android:focusable="false"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/security_temperature_chart_query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/security_temperature_chart_querytime_id"
+            android:layout_below="@id/security_temperature_chart_querytime_id"
+            android:layout_marginTop="10dp"
+            android:background="@color/query_btn_bg"
+            android:text="@string/query_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

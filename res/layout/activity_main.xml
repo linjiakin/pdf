@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <!-- logo与标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/sz_logo_id"
+            android:layout_width="90dp"
+            android:layout_height="74dp"
+            android:contentDescription="@string/sz_logo_description"
+            android:background="@drawable/sz_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sz_logo_id"
+            android:text="@string/main_logo_name"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:textSize="36sp"/>
+        </RelativeLayout>
+
+    <!-- 登录用户名 -->
+    <TextView
+        android:id="@+id/login_username_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:layout_gravity="right"
+        android:paddingRight="20sp"
+        android:paddingTop="10dp"/>
+
+    <!-- 主操作面板 -->
+    <GridView
+        android:id="@+id/main_operator_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:layout_marginTop="20dp">
+        </GridView>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- 设备状态监测 设备温度曲线 -->
+
+    <LinearLayout
+        android:id="@+id/sbwd_container_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/deviceTemperature_webview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="#000000"
+            android:layerType="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <!-- 查询面板 -->
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/zz_type_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dms_zz_type_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+        <!-- 装置类型 -->
+
+        <Spinner
+            android:id="@+id/zz_type_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zz_type_label_id"
+            android:layout_marginLeft="15dp" >
+        </Spinner>
+
+        <!-- 设备名称 -->
+
+        <TextView
+            android:id="@+id/dn_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zz_type_spinner_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/dms_device_name_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/device_name_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zz_type_spinner_id"
+            android:layout_below="@id/dn_label_id" >
+        </Spinner>
+
+        <!-- 设备类型 -->
+
+        <TextView
+            android:id="@+id/dt_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_name_spinner_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/dms_device_type_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/device_type_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zz_type_spinner_id"
+            android:layout_below="@id/dt_label_id" >
+        </Spinner>
+
+        <!-- 查询时间 -->
+
+        <TextView
+            android:id="@+id/query_time_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_type_spinner_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/dms_query_time_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/sbwd_query_date_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zz_type_spinner_id"
+            android:layout_below="@id/query_time_label_id"
+            android:drawableBottom="@drawable/bottom_line_0099cc"
+            android:editable="false"
+            android:focusable="false"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/sbwd_query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zz_type_spinner_id"
+            android:layout_below="@id/sbwd_query_date_id"
+            android:layout_marginTop="10dp"
+            android:background="@color/query_btn_bg"
+            android:text="@string/query_label"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

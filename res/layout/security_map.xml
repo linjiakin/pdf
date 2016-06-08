@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#000" >
+
+        <TextView
+            android:id="@+id/security_map_zymap_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="中压平面图"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/security_map_bymap_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="变压平面图"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/security_map_dymap_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="低压平面图"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/security_map_cursor_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/common_image_description"
+        android:scaleType="matrix"
+        android:src="@drawable/pager_cursor_unline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:src="@drawable/humidity" />
+
+            <!-- 湿度 -->
+            <TextView
+                android:id="@+id/security_map_humidity_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11%"
+                android:textColor="#FFF" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/temperature" />
+
+            <!-- 温度 -->
+            <TextView
+                android:id="@+id/security_map_temperature_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12℃"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/security_map_webview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="#000000"
+            android:layerType="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+        			android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="序号"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+        			android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设备名称"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="状态"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+        			android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="操作时间"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+        			android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="操作人"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_line_bg"
+                android:contentDescription="@string/common_image_description" />
+
+            <ListView
+                android:id="@+id/security_devicechange_listview_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/gray_line_bg" >
+            </ListView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/security_devicechange_devicetype_label_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备类型:"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/security_devicechange_devicetype_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_devicechange_devicetype_label_id"
+                android:layout_marginLeft="15dp" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/security_devicechange_otime_label_id"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_devicechange_devicetype_id"
+                android:text="操作时间："
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/security_devicechange_otime_start_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/security_devicechange_devicetype_id"
+                android:layout_below="@id/security_devicechange_otime_label_id"
+                android:drawableBottom="@drawable/bottom_line_0099cc"
+                android:focusable="false"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/security_devicechange_otime_to_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_devicechange_otime_start_id"
+                android:text="至"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/security_devicechange_otime_end_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/security_devicechange_devicetype_id"
+                android:layout_below="@id/security_devicechange_otime_to_id"
+                android:drawableBottom="@drawable/bottom_line_0099cc"
+                android:focusable="false"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/security_devicechange_query_id"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/security_devicechange_devicetype_id"
+                android:layout_below="@id/security_devicechange_otime_end_id"
+                android:background="@color/query_btn_bg"
+                android:text="@string/query_label"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

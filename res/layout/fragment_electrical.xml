@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000" >
+
+    <!-- 电气监测 -->
+
+
+    <!-- 配电房选择面板 -->
+
+    <include
+        android:id="@+id/electrical_choice_pdf_panel_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="180dp"
+        layout="@layout/choice_pdf_panel" />
+
+    <!-- 具体明细面板 -->
+
+    <LinearLayout
+        android:id="@+id/electrical_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- 大类设备选项卡面板 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/electrical_map_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="接线图" />
+
+        <Button
+            android:id="@+id/electrical_monitordata_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="监测数据" />
+
+        <Button
+            android:id="@+id/electrical_load_chart_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="负载趋势图" />
+
+    </LinearLayout>
+
+</LinearLayout>
